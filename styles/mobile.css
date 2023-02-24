@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/overpass/Overpass-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/overpass/Overpass-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+    font-weight: 400
+    ;
+}
+
+@font-face{
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+    font-weight: 700;
+}
+
+@supports(font-variation-settings: normal){
+    @font-face {
+        font-family: 'Overpass';
+        src: url('../fonts/overpass/Overpass-VariableFont_wght.ttf') format('truetype supports variations'),
+        url('../fonts/overpass/Overpass-VariableFont_wght.ttf') format('truetype-variations');
+        font-weight: 400 700;
+    }
+}
+
+:root{
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red-hover: hsl(355, 100%, 74%);
+    --very-dark-blue-headings: hsl(208, 49%, 24%);
+    --grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --very-dark-greyish-blue-body-text: hsl(207, 13%, 34%);
+    --very-dark-blue-footer-text: hsl(240, 10%, 16%);
+
+    --gradient-CTA-very-ligh-red: hsl(13, 100%, 72%);
+    --gradient-CTA-light-red: hsl(353, 100%, 62%);
+
+    --gradient-very-dark-gray-blue: hsl(237, 17%, 21%);
+    --gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    
+    --font-ubuntu: 'Ubuntu', sans-serif;
+    --font-overpass: 'Overpass', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-ubuntu);
+}
