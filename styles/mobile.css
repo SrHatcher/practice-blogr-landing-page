@@ -96,19 +96,24 @@ header{
 }
 .header__navbar{
     position: absolute;
+    left: 0;
+    right: 0;
     top: 10rem;
-    left: calc(50vw - 16rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     
+    margin-left: auto;
+    margin-right: auto;
     padding: 3rem;
-    width: auto;
+    width: 80%;
+    max-width: 36rem;
 
     border-radius: 0.8rem;
     background-color: white;
     box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.26);
-
+}
+.header__navbar--inactive{
     display: none;
 }
 .navbar__list{
@@ -161,7 +166,8 @@ header{
 
     background-color: #EFEFF2;
     border-radius: 0.8rem;
-
+}
+.item__list--inactive{
     display: none;
 }
 .item__item{
@@ -210,6 +216,9 @@ header{
     background-repeat: no-repeat;
     border: none;
     background-color: transparent;
+}
+.header__burger_button--active{
+    background-image: url('../images/icon-close.svg') !important;
 }
 main{
     display: flex;
@@ -425,6 +434,7 @@ main{
     gap: 3rem;
 }
 footer{
+    width: 100%;
     padding: 5rem 0;
     
     border-top-right-radius: 10rem;
