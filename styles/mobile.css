@@ -285,6 +285,7 @@ main{
     border-radius: 2.5rem;
     color: var(--light-red);
     background-color: white;
+    transition: all ease-in 0.1s;
 }
 .frontpage__learn_button{
     display: flex;
@@ -302,6 +303,7 @@ main{
     color: white;
     background-color: transparent;
     border: solid 0.1rem white;
+    transition: all ease-in 0.1s;
 }
 .main__second_view{
     display: flex;

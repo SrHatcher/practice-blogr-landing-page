@@ -5,6 +5,11 @@ const itemList = document.querySelectorAll('.item__list')
 
 navbarItem.forEach((element, index)=>{
     element.addEventListener('click', ()=>{
+        itemList.forEach((element2, index2)=>{
+            if(index!=index2){
+                element2.classList.toggle('item__list--inactive', true)
+            }
+        })
         itemList[index].classList.toggle('item__list--inactive')
     })
 })
